@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PineApple</title>
+</head>
+<body>
+
+<tr>
+    <td>Enter the number of pineapple: </td>
+    <td><input type="text" id="num1" onkeyup="autoadd()"></td>
+</tr>
+<tr>
+    Result: &nbsp;<label id="result" style="font-size: 30px; color: crimson;"></label>
+</tr>
+
+
+<script>
+    function autoadd(){
+
+    let v1 = parseInt(document.getElementById("num1").value);
+    let result;
+    if(v1<=9){
+        result= ((v1*23.49)*1.2)+50;
+        document.getElementById("result").innerText = result;
+    }
+    else if(v1>=10 && v1<=19){
+        result= (((v1*23.49)*0.9)*1.2)+50;
+        document.getElementById("result").innerText = result;
+    }
+    else if(v1>=20){
+        result= (((v1*23.49)*0.85)*1.2)+50;
+        document.getElementById("result").innerText = result;
+    }
+
+    // if (v1 <= 99){
+    //     let temp = (v1*4.2)+75;
+    //     let result1 = temp * 1.2;
+
+    //     document.getElementById("result").innerText = result1;
+    // }
+    // else if(v1>=100 && v1<=199){
+    //             let temp = (v1*6.2)+75;
+    //             let result1 = temp * 1.2;
+
+    //     document.getElementById("result").innerText = result1;
+    // }
+    // else if(v1<=399 && v1>=200){
+    //             let temp = (v1*8.2)+75;
+    //             let result1 = temp * 1.2;
+
+    //     document.getElementById("result").innerText = result1;
+    // }
+    // else if(v1>=400){
+    //             let temp = (v1*10.2)+75;
+    //             let result1 = temp * 1.2;
+    //     document.getElementById("result").innerText = result1;
+    // }
+    }
+</script>
+</body>
+</html>

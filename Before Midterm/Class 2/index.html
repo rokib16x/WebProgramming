@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="process.php" method="post">
+      <table>
+        <tr>
+          <img src="banner.jpg" alt="Banner" height="80">
+        </tr>
+
+        <tr>
+          <td><label for="name">Name: </label></td>
+          <td>
+            <input
+              type="text"
+              name="user_name"
+              required
+              placeholder="Enter your name here"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email: </label></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="password">Password: </label></td>
+          <td><input type="text" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td>
+            <input type="radio" name="name" />Male
+            <input type="radio" name="name" />Female
+            <input type="radio" name="name" />Other
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="text">CV </label></td>
+
+          <td>         
+             <input type="file" id="myFile" name="filename" accept="application/pdf" 
+              />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="text">Birth Date </label></td>
+
+          <td>         
+            <input type="date" id="birthday" name="birthday">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center"><button>Sign Up</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
