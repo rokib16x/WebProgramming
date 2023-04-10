@@ -47,7 +47,8 @@ select {
     padding: 5px;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
     font-family: 'MyCustomFont', sans-serif;
     height: 50px;
     font-size: 24px;
@@ -59,9 +60,10 @@ input[type="submit"] {
     margin-top: 20px;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
     font-family: 'MyCustomFont', sans-serif;
-    background-color: #444;
+    background-color: #555;
 }
 
 .result {
