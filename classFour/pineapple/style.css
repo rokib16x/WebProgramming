@@ -3,7 +3,10 @@ body {
     color: #444;
     background-color: #fff;
     }
-    
+    @font-face {
+        font-family: 'Nothing';
+        src: url('../../Font/nothing.ttf');
+    }
         h1 {
             font-size: 40px;
             color: #f39c12;
