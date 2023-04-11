@@ -1,0 +1,86 @@
+/* Insert CSS code here */
+    /* Table Styles */
+/* Table Styles */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../../Font/nothing.ttf') format('truetype');
+}
+/* Table Styles */
+table {
+    font-family: 'MyCustomFont', sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 600px;
+    border: 1px solid #444;
+  }
+  
+  th {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #444;
+    padding: 10px;
+  }
+  
+  td {
+    font-size: 20px; /* Updated font size */
+    line-height: 1.6em;
+    border: 1px solid #444;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Result Styles */
+  .result {
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Form Styles */
+  form {
+    font-family: 'MyCustomFont', sans-serif;
+    border: 2px solid #444;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="email"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #020101;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+  

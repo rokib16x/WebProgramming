@@ -1,4 +1,13 @@
-<?php
+<head>
+  <title>My Webpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styledisplay.css">
+</head>
+
+<body>
+  <!-- Insert your PHP code here -->
+  <?php
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -26,20 +35,4 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-<style>
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  background-color: #4CAF50;
-  color: white;
-}
-</style>
+</body>
