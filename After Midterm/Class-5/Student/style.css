@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../../Font/nothing.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+form {
+    border: 2px solid #444;
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+table {
+    font-size: 28px;
+    color: #444;
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px;
+}
+
+input[type="text"],
+textarea,
+input[type="email"] {
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 14px;
+    color: brown;
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #020101;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="submit"]{
+    font-family: 'MyCustomFont', sans-serif;
+    height: 50px;
+    font-size: 24px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.result {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
