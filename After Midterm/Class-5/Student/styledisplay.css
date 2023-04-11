@@ -8,6 +8,7 @@
 /* Table Styles */
 table {
     font-family: 'MyCustomFont', sans-serif;
+    border: 2px solid #444;
     border-collapse: collapse;
     margin: 0 auto;
     max-width: 600px;
