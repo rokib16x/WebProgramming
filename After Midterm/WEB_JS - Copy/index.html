@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<tr>
+    <td>Num1: </td>
+    <td><input type="text" id="num1" onkeyup="autoadd()"></td>
+</tr>
+<tr>
+    <label id="result" style="font-size: 50px; color: crimson;"></label>
+</tr>
+
+
+<script>
+    function autoadd(){
+
+    let v1 = parseInt(document.getElementById("num1").value);
+    if (v1<55){
+        document.getElementById("result").innerText = "F";
+    }
+    else if(v1>54 && v1<70){
+        document.getElementById("result").innerText = "B";
+    }
+    else if(v1<101 && v1>69){
+        document.getElementById("result").innerText = "A";
+    }
+    else{
+        document.getElementById("result").innerText = "Invalid";
+    }
+    }
+</script>
+</body>
+</html>

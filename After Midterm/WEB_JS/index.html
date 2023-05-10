@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<tr>
+    <td>Num1</td>
+    <td><input type="text" id="num1" onkeyup="autoadd()"></td>
+</tr>
+<tr>
+    <td>Num2</td>
+    <td>
+        <td><input type="text" id="num2" onkeyup="autoadd()"></td>
+
+     
+
+    </td>
+</tr>
+<tr>   
+    <td><input type="submit" value="+" onclick="sum()"></td>
+    <td> <input type="submit" value="-" onclick="sub()"></td>
+    <td> <input type="submit" value="*" onclick="mul()"></td>
+    <td> <input type="submit" value="/" onclick="div()"></td>
+
+<tr>
+    <td>Result:</td>
+    <label id="result" style="font-size: 50px; color: firebrick;"></label>
+</tr>
+
+
+<script>
+    function autoadd(){
+    v1 = parseInt(document.getElementById("num1").value);
+    v2 = parseInt(document.getElementById("num2").value);
+    let result1 = v1 + v2;
+    document.getElementById("result").innerText = result1;
+    }
+function sum(){
+    let v1 = parseInt(document.getElementById("num1").value);
+    let v2 = parseInt(document.getElementById("num2").value);
+    let result1 = v1 + v2;
+    document.getElementById("result").innerText = result1;
+}
+function sub(){
+    let v1 = parseInt(document.getElementById("num1").value);
+    let v2 = parseInt(document.getElementById("num2").value);
+    let result1 = v1 - v2;
+    document.getElementById("result").innerText = result1;
+}
+function mul(){
+    let v1 = parseInt(document.getElementById("num1").value);
+    let v2 = parseInt(document.getElementById("num2").value);
+    let result1 = v1 * v2;
+    document.getElementById("result").innerText = result1;
+}
+function div(){
+    let v1 = parseInt(document.getElementById("num1").value);
+    let v2 = parseInt(document.getElementById("num2").value);
+    let result1 = v1 / v2;
+    document.getElementById("result").innerText = result1;
+}
+</script>
+</body>
+</html>

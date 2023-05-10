@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<tr>
+    <td>Unit Consumed: </td>
+    <td><input type="text" id="num1" onkeyup="autoadd()"></td>
+</tr>
+<tr>
+    <label id="result" style="font-size: 50px; color: crimson;"></label>
+</tr>
+
+
+<script>
+    function autoadd(){
+
+    let v1 = parseInt(document.getElementById("num1").value);
+    if (v1 <= 99){
+        let temp = (v1*4.2)+75;
+        let result1 = temp * 1.2;
+
+        document.getElementById("result").innerText = result1;
+    }
+    else if(v1>=100 && v1<=199){
+                let temp = (v1*6.2)+75;
+                let result1 = temp * 1.2;
+
+        document.getElementById("result").innerText = result1;
+    }
+    else if(v1<=399 && v1>=200){
+                let temp = (v1*8.2)+75;
+                let result1 = temp * 1.2;
+
+        document.getElementById("result").innerText = result1;
+    }
+    else if(v1>=400){
+                let temp = (v1*10.2)+75;
+                let result1 = temp * 1.2;
+        document.getElementById("result").innerText = result1;
+    }
+    }
+</script>
+</body>
+</html>
